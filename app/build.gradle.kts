@@ -41,6 +41,15 @@ android {
 
 dependencies {
 
+    // navigation
+    implementation(libs.androidx.navigation.compose)
+
+    // ViewModel utilities for Compose
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+
+    // constraint layout
+    implementation(libs.androidx.constraintlayout.compose)
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
