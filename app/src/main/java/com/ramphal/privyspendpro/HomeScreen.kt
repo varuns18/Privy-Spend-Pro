@@ -20,7 +20,6 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.ArrowForward
 import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButtonDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedCard
 import androidx.compose.material3.OutlinedIconButton
@@ -46,7 +45,7 @@ import com.ramphal.privyspendpro.ui.theme.SentColor
 import com.ramphal.privyspendpro.ui.theme.myFont
 
 @Composable
-fun HomeScreen(modifier: Modifier = Modifier ){
+fun HomeScreen(modifier: Modifier = Modifier){
     Surface(modifier = modifier.fillMaxSize()) {
         ConstraintLayout(modifier = Modifier.fillMaxSize()) {
             val (nameRow, card, inAndOut, list) = createRefs()
@@ -288,15 +287,15 @@ fun CardItem(modifier: Modifier){
         shape = RoundedCornerShape(16.dp)
     ) {
         Box(
-            modifier = modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth()
                 .padding(2.dp)
         ) {
             Column(
-                modifier = modifier.padding(14.dp)
+                modifier = Modifier.padding(14.dp)
 
             ){
                 Text(
-                    text = "Total Balance",
+                    text = "Current Balance",
                     fontSize = 18.sp,
                     fontFamily = myFont,
                 )
